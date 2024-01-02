@@ -1,0 +1,72 @@
+.contact-form {
+  background-image: url("/../public/images/background2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    background-color: rgba(212, 233, 249, 1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  &__title,
+  &__description {
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-top: 10px;
+  }
+
+  &__input,
+  &__select,
+  &__textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  &__checkbox {
+    margin-right: 5px;
+  }
+
+  &__button {
+    background-color: #da1384;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: darken(#da1384, 10%);
+    }
+  }
+}

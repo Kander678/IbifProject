@@ -1,0 +1,77 @@
+// offer.scss
+.offer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  background-image: url("/../public/images/background.jpg"); // Popraw ścieżkę do zdjęcia tła
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 130px 20px 80px;
+
+  .oferta {
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+}
+
+.service-section {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  margin: 0 10px;
+  border-radius: 10px;
+  color: black;
+  height: 30vw;
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.8vw;
+    color: black;
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.container {
+  position: absolute;
+  top: 0.1vw;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.bar-container {
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  width: 100px;
+  height: 8px;
+  background-color: #da1384;
+  margin-right: 10px;
+  border-radius: 1vw;
+}
+
+.text {
+  font-size: 18px;
+  color: white;
+}
+
+h3 {
+  font-size: 32px;
+}

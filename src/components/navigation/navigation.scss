@@ -1,0 +1,68 @@
+.navigation {
+  box-sizing: auto;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+  &--sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    // Logo pozostaje w lewym rogu, nie potrzeba zmian.
+    &-img {
+      max-width: 100px;
+      margin-right: 10px;
+    }
+    &-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  &__links {
+    margin-left: auto; // Powoduje, że linki są wyrównane do prawej strony
+    list-style: none;
+    display: flex;
+    margin-right: 10px;
+  }
+  &__item {
+    margin-right: 10px;
+  }
+
+  &__quote-btn {
+    padding: 10px 20px;
+    background-color: #da1384;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation__links,
+  .navigation__quote-btn {
+    display: none; // Ukrywa linki i przycisk na mniejszych ekranach
+  }
+}
+
+@media (max-width: 320px) {
+  .navigation__logo-img {
+    max-width: 60px;
+  }
+}

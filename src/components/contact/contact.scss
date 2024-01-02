@@ -1,0 +1,65 @@
+// Contact.scss
+.contact-container {
+  background-color: white;
+  display: flex;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.contact-image {
+  flex: 1;
+
+  img {
+    width: 85%;
+    height: auto;
+    border-radius: 50px;
+    padding: 4%;
+  }
+}
+
+.contact-text {
+  flex: 1;
+  padding: 20px;
+
+  &__title {
+    font-size: 3vw;
+    margin-bottom: 1vw;
+    color: black;
+  }
+
+  &__description {
+    font-size: 2vw;
+    margin-bottom: 1vw;
+    color: black;
+  }
+
+  .contact-btn {
+    margin: 10% 0% 10% 0%;
+    padding: 10px 20px;
+    background-color: #da1384;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+.bar-container {
+  display: flex;
+  align-items: baseline;
+
+  .bar {
+    width: 100px;
+    height: 8px;
+    background-color: #da1384;
+    border-radius: 1vw;
+    margin-right: 10px;
+  }
+
+  .text {
+    font-size: 18px;
+    color: black;
+  }
+}
